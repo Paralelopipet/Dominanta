@@ -1,0 +1,80 @@
+
+.zaposleni
+{	
+	position:relative;
+	text-align:center;
+	color:black;
+	opacity:0.9;
+}
+.zaposleniimg
+{	
+	transition: all .3s ease-in-out;
+	width:70%;
+	margin:1px;
+	border-radius:50%;
+}
+.zaposleniime
+{
+font-family:"DancingScript";
+font-size:2rem;
+color:black;
+
+}
+.zaposleni:hover
+{
+	opacity:1;
+	
+	
+}
+.zaposleniimg:hover
+{	
+	transform:scale(1.1);
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+.buttons
+{
+	position:absolute;
+	left:50%;
+	transform: translate(-50%, 0);
+}
+
+.zaposleni
+{
+	position:relative;
+	width:100%;
+	margin:1px;
+	text-align:center;
+	
+	opacity:0.8;
+}
+.zaposleniimg
+{	
+	transition: all .3s ease-in-out;
+	width:80%;
+	margin:1px;
+	margin-left:10%;
+	margin-right:10%;
+	border-radius:50%;
+	float:left;
+}
+.zaposleniime
+{
+font-size:2rem;
+color:black;
+
+}
+.zaposleni:hover
+{
+	opacity:1;
+	
+	
+}
+.zaposleniimg:hover
+{	
+	transform:scale(1.1);
+}
+}

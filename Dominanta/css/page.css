@@ -1,0 +1,47 @@
+
+
+#leftTray
+{
+	z-index: -1;
+  top:0;
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  padding: 0;
+  position:fixed
+	
+}
+#rightTray
+{
+	z-index: -1;
+  top:0;
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  padding: 0;
+  position:fixed
+	
+}
+
+@media screen and (max-width: 800px)
+{
+	.name1
+	{
+	height:45px;
+	margin-bottom:0px;
+	}
+	#leftTray
+{
+  opacity:0.2;
+	
+}
+#rightTray
+{
+   opacity:0.2;
+}
+p
+{
+	background:rgba(255, 255, 255, 0.8);
+}
+}
+
