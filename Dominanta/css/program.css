@@ -317,11 +317,10 @@ background-size: cover;
 	/*padding-right:6.6px;*/
 	margin-top:10px;
 }
-#bbrow:hover
+#bbrow:hover img
 {
-	
-	filter: brightness(110%);
-	filter: invert(100%);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 #bbrows
 {
@@ -331,8 +330,6 @@ background-size: cover;
 }
 #bbrows:hover
 {
-	
-	filter: brightness(110%);
 	filter: invert(100%);
 	
 }
@@ -617,18 +614,17 @@ font-family:"DancingScript";
 }
 .item {
   position: relative;
-  
-  
-  
   overflow: hidden;
   width: 100%;
 }
 .item img {
   max-width: 100%;
-  
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.bbcslike:hover + .overText{
+	opacity:1;
 }
 .but1:hover img {
   -moz-transform: scale(1.1);
@@ -731,12 +727,29 @@ margin-top:1%;
 
 .timbgr
 {
-	background-image:url("../img/tim.jpg");
-	background-repeat: no-repeat, repeat;
-	background-attachment: fixed;
-	background-position: center;
+	background: url("../img/tim.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
+.overText
+{
+	opacity:0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family:"DancingScript";
+	font-size: 50px;
+	font-weight:bold;
+	filter: invert(100%);
+}
+.overText:hover
+{
+	opacity:1;
+}
 @media screen and (max-width: 800px)
 {
 	.name1
@@ -744,7 +757,12 @@ margin-top:1%;
 	height:45px;
 	margin-bottom:0px;
 	}
-
+	.overText
+	{
+		opacity:1;
+		filter: invert(0%);
+		font-size: 25px;
+	}
 }
 
 
