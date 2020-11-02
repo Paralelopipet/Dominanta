@@ -39,7 +39,15 @@
 {
    opacity:0.2;
 }
-p
+.section_image p
+{
+	background:rgba(255, 255, 255, 0.8);
+}
+.section_image
+{
+	z-index:1;
+}
+.page-section p
 {
 	background:rgba(255, 255, 255, 0.8);
 }
