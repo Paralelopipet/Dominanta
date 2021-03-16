@@ -296,13 +296,18 @@ background-size: cover;
 	float:right;
 	font-size:100px;
 }
+.picture_overlay
+{
+	height:300px;
+}
 .bbcslike
 {
 	padding:0;
-	min-height:100%;
-	width:auto;
+	height:30%;
+	/*width:auto;*/
 	filter: brightness(100%);
-	
+	width: 200px;
+    height: -webkit-fill-available;
 }
 #bbrowl
 {

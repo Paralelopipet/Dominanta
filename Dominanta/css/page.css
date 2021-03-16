@@ -2,25 +2,73 @@
 
 #leftTray
 {
-	z-index: -1;
-  top:0;
-  position: absolute;
-  left: 0px;
-  height: 100vh;
-  padding: 0;
-  position:fixed
-	
+	z-index: 0;
+	top:13vh;
+	position: absolute;
+	left: 0px;
+	height: 100vh;
+	padding: 0;
+	position:fixed
 }
 #rightTray
 {
-	z-index: -1;
-  top:0;
-  position: absolute;
-  right: 0px;
-  height: 100vh;
-  padding: 0;
-  position:fixed
-	
+	z-index: 0;
+    top:13vh;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    padding: 0;
+    position:fixed
+}
+.trayDiv
+{
+	position: relative;
+	width:10vh;
+	padding:1vh;
+	transition: 1s;
+}
+.trayDiv:hover
+{
+	position: relative;
+	width:25vh;
+	background-color:#004A94;
+}
+.trayDivRight
+{
+		
+}
+ol
+{
+	-webkit-column-break-inside: avoid;
+	-webkit-column-break-after: always;
+	margin-left:0;
+}
+.text_section li
+{
+	list-style-image:url("../img/zub_icon.png");
+}
+.trayText
+{
+	position: absolute;
+	top:50%;
+	transform: translate(0, -50%);
+	left:10vh;
+	color:white;
+	text-align:center;
+}
+.trayTextRight
+{
+	position: absolute;
+	top:50%;
+	transform: translate(0, -50%);
+	color:white;
+	text-align:center;
+	left:10vh;
+}
+.trayImage
+{
+	position:relative;
+	height:10vh;
 }
 
 @media screen and (max-width: 800px)
@@ -50,6 +98,13 @@
 .page-section p
 {
 	background:rgba(255, 255, 255, 0.8);
+}
+.trayDiv:hover
+{
+	position: relative;
+	width:10vh;
+	padding:1vh;
+	background-color:white;
 }
 }
 
