@@ -12,6 +12,20 @@
 }
 #rightTray
 {
+	z-index: -1;
+    top:10vh;
+    position: absolute;
+    right: 0px;
+    
+    padding: 0;
+    position:fixed
+}
+#rightTray img 
+{
+	height: 100vh;
+}
+/*#rightTray
+{
 	z-index: 0;
     top:13vh;
     position: absolute;
@@ -19,7 +33,7 @@
     height: 100vh;
     padding: 0;
     position:fixed
-}
+}*/
 .trayDiv
 {
 	position: relative;
