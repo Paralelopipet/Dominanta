@@ -3,6 +3,28 @@
     src: url("../fonts/DancingScript-VariableFont_wght.ttf");
 }
 
+#list {
+	margin: 2em auto;
+	padding: 0;
+	max-width: 600px;
+	list-style: none;
+	height: 15em;
+}
+
+.fade-in-section {
+	opacity: 0;
+	transform: translateY(20vh);
+	visibility: hidden;
+	transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+	will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+	opacity: 1;
+	transform: none;
+	visibility: visible;
+  }
+
+
 .cl
 {
 	
@@ -165,7 +187,7 @@ position: absolute;
 .prazno
 {
 	min-width:100%;
-	height:44px;
+	height:100px;
 }
 .prazno1
 {
@@ -286,7 +308,6 @@ background-size: cover;
 }
 .bbcslike
 {
-	
 	width: 200px;
     height: -webkit-fill-available;
 	filter: brightness(100%);
@@ -383,7 +404,7 @@ background-size: cover;
 }
 .orbit-container
 {
-	height: calc(100vh - 21.5vw);
+	height: calc(100vh - 15vw);
 }
 .margina0
 {
@@ -585,10 +606,9 @@ hr
 }
 .info
 {
-
-color:#12BBBE;
-font-family:"DancingScript";
-
+	color:#12BBBE;
+	font-family:"DancingScript";
+	margin-top: 10rem;
 }
 .info:hover
 {
@@ -617,7 +637,7 @@ font-family:"DancingScript";
 }
 .main_menu
 {
-	width: 14vw;
+	width: calc(14%);
 	height: auto;
 }
 
@@ -673,9 +693,11 @@ font-family:"DancingScript";
 .over_centered
 {
 	position: absolute;
-	transform: translate(50%, -50%);
-	top: calc((100vh - 21.5vw)/2);
-	right: 50%;
+	transform: translate(0%, -100%);
+	top: calc(100vh - 15vw);
+	z-index: 10;
+	float: right;
+	right: 5vw;
 }
 .white_blur
 {
@@ -684,7 +706,7 @@ font-family:"DancingScript";
     top: 0;
     right: 0;
 	left : 0;
-	down:0;
+	/*down : 0;*/
 	height:100%;
 	width:100%;
     filter:blur(30px);
@@ -694,9 +716,9 @@ font-family:"DancingScript";
   color:#12BBBE;
   font-family:"DancingScript";
   font-size:5vw;
-  text-shadow: 2px 2px 8px #000000;
+  text-shadow: 1px 1px 0px #000000;
   white-space: nowrap;
- filter:blur(0);
+  filter:blur(0);
 }
 .text_section
 {
@@ -739,9 +761,14 @@ font-family:"DancingScript";
 	
 }
 
+.zaposleni
+{
+	color: white;
+}
+
 .timbgr
 {
-	background: url("../img/tim.jpg") no-repeat center center fixed; 
+	background: url("../img/mika/timbgr.png") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -756,7 +783,7 @@ font-family:"DancingScript";
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family:"DancingScript";
-	font-size: 50px;
+	font-size: 30px;
 	font-weight:bold;
 }
 .overText:hover
@@ -811,9 +838,11 @@ font-family:"DancingScript";
 {
 	text-align: center;
 }
-.kontaktinfo 
+.kontaktinfo h1
 {
 	text-align: center;
+	color:#12BBBE;
+	font-family:"DancingScript";
 }
 .formaimetext p
 {
@@ -821,6 +850,19 @@ font-family:"DancingScript";
 }
 @media screen and (max-width: 800px)
 {
+	.logo-area
+	{
+		position: absolute;
+		visibility: hidden;
+	}
+	.name1
+	{
+		position: absolute;
+	}
+	#nav1
+	{
+		height: auto;
+	}
 	.bbcslike
 	{
 	width: auto;
@@ -831,8 +873,10 @@ font-family:"DancingScript";
 	{
 	position: relative;
     overflow: hidden;
-	width: 100%;
-	height:auto;
+	}
+	.orbit-container
+	{
+		height: 100%;
 	}
 	.item img
 	{
@@ -853,22 +897,24 @@ font-family:"DancingScript";
 	{
 		width:140px;
 		background-color: rgba(18,187,190,1);
-		-webkit-text-stroke: 1px black;	
 	}
 	#nav1 li
 	{
 		background-image: linear-gradient(to right, rgb(168,168,168) , rgba(18,187,190,0.8));
 		min-width:100%;
 		height:2.85rem;
-		position:relative;
 		z-index:5;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: black;
 	}
 	.centered_text
 	{
 		font-size:10vw;
 		top:17%;
+	}
+	.over_centered
+	{
+		font-size:10vw;
+		top:17%;
+		visibility: hidden;
 	}
 	.section_image p
 	{
@@ -881,6 +927,11 @@ font-family:"DancingScript";
 	.dropdown-but
 	{
 		background-color: rgba(18,187,190,0);	
+	}
+	.toggle-topbar
+	{
+		top: 0;
+		margin-top: 0;
 	}
 }
 

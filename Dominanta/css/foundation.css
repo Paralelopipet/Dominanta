@@ -1791,8 +1791,8 @@ meta.foundation-mq-topbar {
       position: relative;
       text-transform: uppercase; }
     .top-bar .toggle-topbar.menu-icon {
-      margin-top: -16px;
-      top: 50%; }
+      margin-top: 0px; /*Damjan*/
+      top: 0%; }
       .top-bar .toggle-topbar.menu-icon a {
         color: #FFFFFF;
         height: 34px;
@@ -1857,7 +1857,7 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0.9375rem;
       text-transform: none;
       width: 100%;
-	  height: 5em;	}
+	  /*height: 5em;	Damjan*/}
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-left: 0.9375rem;

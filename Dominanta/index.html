@@ -25,15 +25,22 @@
 	<script src="js/index/index.js"></script>
 	<script type="text/javascript">
 		var image1=new Image()
-		image1.src="img/slide1.jpg"
+		image1.src="img/mika/slide1.jpg"
    
 		var image2=new Image()
-		image2.src="img/slide2.jpg"
+		image2.src="img/mika/slide2.jpg"
 		
 		var image3=new Image()
-		image3.src="img/slide3.jpg"
+		image3.src="img/mika/slide3.jpg"
+
+		var image4=new Image()
+		image3.src="img/mika/slide4.jpg"
+
+		var image5=new Image()
+		image3.src="img/mika/slide5.jpg"
 		
 	</script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
   
 	<body class="bgr">
@@ -43,11 +50,15 @@
      <!--Navbar-->
 	<nav class="top-bar mynavbar" data-topbar role="navigation">
 		<ul class="title-area">
-			<li class="">
+			<li class="logo-area">
 			  <a href="index.html"><img class="icon name1" src="img/logo.png"></a>
 			</li>
 		 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-			<li class="toggle-topbar menu-icon ft"><a href="#"><span>Meni</span></a></li>
+			<li class="toggle-topbar menu-icon ft">
+				<span style = "float: left;"><img class="icon name1" src="img/logo.png"></span>
+				<span><img class="icon name1" style="right: 0;" src="img/menu-icon.png"></span>
+
+			</li>
 		</ul>
 
 		<section class="top-bar-section">
@@ -58,13 +69,13 @@
 				<li class="has-dropdown">
 				<a class="but ft" >USLUGE</a>
 				<ul class="dropdown">
-				  <li><a class="dropdown-but ft" href="tim.html">Dečija Stomatologija</a></li>
-				  <li><a class="dropdown-but ft" href="tim.html">Estetska Stomatologija</a></li>
 				  <li><a class="dropdown-but ft" href="tim.html">Oralna Hirurgija</a></li>
 				  <li><a class="dropdown-but ft" href="tim.html">Plombe</a></li>
 				  <li><a class="dropdown-but ft" href="tim.html">Implantati</a></li>
 				  <li><a class="dropdown-but ft" href="tim.html">Preventiva</a></li>
 				  <li><a class="dropdown-but ft" href="tim.html">Protetika</a></li>
+				  <li><a class="dropdown-but ft" href="tim.html">Estetska Stomatologija</a></li>
+				  <li><a class="dropdown-but ft" href="tim.html">Dečija Stomatologija</a></li>
 				</ul>
 				</li>
 				<li class=""><a class="but ft" href="snimanje.html">SNIMANJE ZUBA</a></li>
@@ -87,55 +98,46 @@
 
    <!------------------------>
 		
-
-	<ul class="example-orbit" data-orbit data-options="
-		animation:fade;
-		pause_on_hover:false; 
-		pause_on_mousedown:false; 
-		next_on_click:false; 
-		resume_on_mouseout: false;
-		swipe:false;
-		timer_speed: 3000;
-		slide_number: false;
-		">
-	  <li>
-		<img src="img/slide1.jpg" alt="slide 1" class="slideshow"/>
-	  </li>
-	  <li class="active">
-		<img src="img/slide2.jpg" alt="slide 2" class="slideshow"/>
-	  </li>
-	  <li>
-		<img src="img/slide3.jpg" alt="slide 3" class="slideshow"/>
-	  </li>
-	</ul>
-	<div class = "over_centered">
-	<div class = "white_blur"></div>
-	<h1 class = "centered_text">
-		Dominiraj Osmehom!
-		
-	</h1>
+	<div>
+		<div class = "over_centered">
+			<div class = "white_blur"></div>
+				<h1 class = "centered_text">
+					Dominiraj Osmehom!
+					
+				</h1>
+			</div>
+		<ul class="example-orbit" data-orbit data-options="
+			animation:fade;
+			pause_on_hover:false; 
+			pause_on_mousedown:false; 
+			next_on_click:false; 
+			resume_on_mouseout: false;
+			swipe:false;
+			timer_speed: 3000;
+			slide_number: false;
+			">
+		<li>
+			<img src="img/mika/slide1.jpg" alt="slide 1" class="slideshow"/>
+		</li>
+		<li class="active">
+			<img src="img/mika/slide2.jpg" alt="slide 2" class="slideshow"/>
+		</li>
+		<li>
+			<img src="img/mika/slide3.jpg" alt="slide 3" class="slideshow"/>
+		</li>
+		<li>
+			<img src="img/mika/slide4.jpg" alt="slide 4" class="slideshow"/>
+		</li>
+		<li>
+			<img src="img/mika/slide5.jpg" alt="slide 5" class="slideshow"/>
+		</li>
+		</ul>
 	</div>
 
 
-<div class="row" style = "max-width: 100%; margin-top: 3vh;">
-   <a class="but1" href="decja_stomatologija.html"  title="">
-   <div class="item main_menu picture_overlay">
-		<img class="bbcslike" src="img/decja_stomatologija.png"/>
-		<div class = "overText">
-			Dečija Stomatologija
-		</div>
-   </div>
-   </a>
-   <a class="but1" href="estetska_stomatologija.html"  title="">
-   <div class="item main_menu picture_overlay">
-		<img class="bbcslike" src="img/estetska_stomatologija.png"/>
-		<div class = "overText">
-			Estetska Stomatologija
-		</div>
-   </div>
-   </a>
+<div class="row" style ="margin-top: 3vh;">
    <a class="but1" href="oralna_hirurgija.html"  title="">
-   <div class="item main_menu picture_overlay">
+   <div class="item main_menu" data-aos="fade-up">
 		<img class="bbcslike" src="img/oralna_hirurgija.png"/>
 		<div class = "overText">
 			Oralna Hirurgija
@@ -145,7 +147,7 @@
 
 
    <a class="but1" href="plombe.html"  title="">
-   <div class="item main_menu picture_overlay">
+   <div class="item main_menu" data-aos="fade-up" data-aos-delay="100">
    <img class="bbcslike" src="img/plombe.png"/>
    <div class = "overText">
 			Plombe
@@ -153,7 +155,7 @@
    </div>
    </a>
    <a class="but1" href="implantati.html"  title="">
-   <div class="item main_menu picture_overlay">
+   <div class="item main_menu" data-aos="fade-up" data-aos-delay="200">
    <img class="bbcslike" src="img/implantati.png"/>
    <div class = "overText">
 			Implantati
@@ -161,7 +163,7 @@
    </div>
    </a>
    <a class="but1" href="preventiva.html"  title="">
-   <div class="item main_menu picture_overlay">
+   <div class="item main_menu" data-aos="fade-up" data-aos-delay="300">
    <img class="bbcslike" src="img/preventiva.png"/>
    <div class = "overText">
 			Preventiva
@@ -169,13 +171,30 @@
    </div>
    </a>
    <a class="but1" href="protetika.html"  title="">
-   <div class="item main_menu picture_overlay">
+   <div class="item main_menu" data-aos="fade-up" data-aos-delay="400">
    <img class="bbcslike" src="img/protetika.png"/>
    <div class = "overText">
 			Protetika
    </div>
    </div>
    </a>
+   <a class="but1" href="estetska_stomatologija.html"  title="">
+	<div class="item main_menu" data-aos="fade-up" data-aos-delay="500">
+		 <img class="bbcslike" src="img/estetska_stomatologija.png"/>
+		 <div class = "overText">
+			 Estetska Stomatologija
+		 </div>
+	</div>
+	</a>
+   <a class="but1" href="decja_stomatologija.html"  title="">
+	<div class="item main_menu" data-aos="fade-up" data-aos-delay="600">
+		 <img class="bbcslike" src="img/decja_stomatologija.png"/>
+		 <div class = "overText">
+			 Dečija Stomatologija
+		 </div>
+	</div>
+	</a>
+
 </div>
 	
 		<br>
@@ -185,9 +204,9 @@
 
 	<!--------------------KONTAKT--------------->
 
-	<div class="row" style = "margin-top: 10vh;">
+	<div class="row" style = "margin-top: 10vh;" data-aos="fade-up">
 		<div class="large-4 small-12 columns kontaktinfo">
-			<h1 class = "info kontaktinfo">Radno vreme:</h1>
+			<h1 class = "kontaktinfo">Radno vreme:</h1>
 				<p> 
 				Ponedeljak: 08:00 - 20:00<br/>
 				Utorak: 08:00 - 20:00<br/>
@@ -197,7 +216,7 @@
 				</p>
 		</div>
 		<div class="large-4 small-12 columns kontaktinfo">
-			<h1 class = "info kontaktinfo">Kontakt</h1>
+			<h1 class = "kontaktinfo">Kontakt</h1>
 			</h1>
 			<p>Adresa: <br>Vuka Karadžića 84<br> Srbija, Obrenovac<br>
 			Telefon:<br>
@@ -209,7 +228,7 @@
 			<img src="img/logo.png" class = "">
 		</div>
 	</div>
-	<div class = "row">
+	<div class = "row" data-aos="fade-up">
 	<iframe class = "videoembed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2006.8411785250908!2d20.20303997029113!3d44.65626740928138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a1463d5884fb7%3A0xc8192fd296af6f3a!2sStomato%C5%A1ka%20ordinacija%20%22Dominanta%22!5e0!3m2!1sen!2srs!4v1604252033502!5m2!1sen!2srs" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
 </div>
    
@@ -262,6 +281,10 @@
     <script>
       $(document).foundation();
     </script>
-	
+<!--------------AOS------------->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
