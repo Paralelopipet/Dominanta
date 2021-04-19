@@ -46,10 +46,7 @@
 	position: relative;
 	width:25vh;
 	background-color:#004A94;
-}
-.trayDivRight
-{
-		
+	color: white;
 }
 ol
 {
@@ -67,7 +64,7 @@ ol
 	top:50%;
 	transform: translate(0, -50%);
 	left:10vh;
-	color:white;
+	color:rgba(255, 255, 255, 0);
 	text-align:center;
 }
 .trayTextRight
@@ -93,32 +90,32 @@ ol
 	margin-bottom:0px;
 	}
 	#leftTray
-{
-  opacity:0.2;
-	
-}
-#rightTray
-{
-   opacity:0.2;
-}
-.section_image p
-{
-	background:rgba(255, 255, 255, 0.8);
-}
-.section_image
-{
-	z-index:1;
-}
-.page-section p
-{
-	background:rgba(255, 255, 255, 0.8);
-}
-.trayDiv:hover
-{
-	position: relative;
-	width:10vh;
-	padding:1vh;
-	background-color:white;
-}
+	{
+	opacity:0.2;
+		
+	}
+	#rightTray
+	{
+	opacity:0.2;
+	}
+	.section_image p
+	{
+		background:rgba(255, 255, 255, 0.8);
+	}
+	.section_image
+	{
+		z-index:1;
+	}
+	.page-section p
+	{
+		background:rgba(255, 255, 255, 0.8);
+	}
+	.trayDiv:hover
+	{
+		position: relative;
+		width:10vh;
+		padding:1vh;
+		background-color:white;
+	}
 }
 
