@@ -608,7 +608,6 @@ hr
 {
 	color:#12BBBE;
 	font-family:"DancingScript";
-	margin-top: 10rem;
 }
 .info:hover
 {
@@ -726,11 +725,20 @@ hr
 }
 .text_section
 {
-	font-family:DancingScript;
+	/*font-family:DancingScript;*/
 }
 .section_image
 {
-	background-image: url("../img/download.jpg");
+	background-image: url("../img/mika/page4.jpg");
+	background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+	z-index: -10;
+    position: relative;
+}
+.section_image_left
+{
+	background-image: url("../img/mika/page3.jpg");
 	background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
